@@ -1,0 +1,100 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style parent="Theme.AppCompat.Light.DarkActionBar" name="AppTheme1">
+    <item name="titleTextColor">@android:color/black</item>
+
+    <item name="colorPrimary">@color/layout</item>
+    <item name="colorPrimaryDark">@color/rbTxtColor</item>
+    <item name="colorAccent">@color/colorAccent1</item>
+    </style>
+
+    <!--设置菜单属性-->
+    <style name="AppToobarTitleTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+    <style name="OverflowMenuStyle" parent="@style/Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">#d7d7d7</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="android:dropDownHorizontalOffset">10dp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="AppDropDownListViewStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:divider">#cccccc</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+    <style name="AppToobarPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <item name="android:dropDownListViewStyle">@style/AppDropDownListViewStyle</item>
+    </style>
+
+
+    <!--可能是下面的全部-->
+
+    <style name="main_rb_dis">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">0sp</item>
+        <item name="android:paddingBottom">0sp</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="warn_dialog_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_right</item>  //进入时的动画
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>    //退出时的动画
+    </style>
+
+    <style name="choice_dialog_style" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>  //进入时的动画
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>    //退出时的动画
+    </style>
+
+
+    <style name="lv_sb_rb_display" >
+        <item name="android:textColor">@color/rbTxtColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:button">@null</item>
+
+    </style>
+
+
+    <style name="daily_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="choice_type_body_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+</resources>

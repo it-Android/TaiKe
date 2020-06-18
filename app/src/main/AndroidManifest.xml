@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.taike01">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sy0"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.HeadActivity"></activity>
+        <activity android:name=".login.login_Activity" />
+        <activity android:name=".mine_f.MistakenActivity" />
+        <activity
+            android:name=".mine.mini_data.MineNote"
+            android:theme="@style/AppTheme1"
+            android:label="@string/text_name"/>
+        <activity
+            android:name=".mine.mini_data.New_note"
+            android:theme="@style/AppTheme1" />
+        <activity android:name=".mine_f.CollectActivity" />
+        <activity android:name=".mine_f.OperationActivity" />
+        <activity android:name=".mine_f.ChoiceActivity" />
+        <activity android:name=".mine.mini_data.MineStyle" />
+        <activity android:name=".mine.mini_data.SetName" />
+        <activity android:name=".login.register" />
+        <activity android:name=".mine.mine_data" />
+        <activity android:name=".activity.ReadActivity" />
+        <activity android:name=".mine.Clock_in" />
+        <activity android:name=".mine.SetPassword_Activity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".login.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

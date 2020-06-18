@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ReadActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/read_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppToobarTitleTheme"
+        app:popupTheme="@style/AppToobarPopupTheme"
+        app:navigationIcon="@mipmap/icon_back"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/read_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_gravity="center"
+            android:text="倒计时：40：00"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#9C9C9C"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/read_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#f5f5f5">
+    </androidx.viewpager.widget.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="#9C9C9C"/>
+
+    <LinearLayout
+        android:id="@+id/read_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5sp"
+        android:padding="6dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+                <CheckBox
+                    android:id="@+id/read_cb_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/collect_day"
+                    android:button="@null" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/read_ll_btnBox"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/read_tv_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/submission_btn_display"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="4dp"
+                    android:text="交卷" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/read_tv_correct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableLeft="@mipmap/true_day"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/read_tv_mistaken"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/false_day"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/read_choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/show_type"
+                    android:drawablePadding="8dp"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="0/100"/>
+            </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

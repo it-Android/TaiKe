@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HeadActivity"
+    android:background="@color/layout">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="更换头像"
+        android:theme="@style/AppToobarTitleTheme"
+        app:popupTheme="@style/AppToobarPopupTheme"
+        android:background="#ffffff">
+    </androidx.appcompat.widget.Toolbar>
+
+    <GridView
+        android:id="@+id/head_gv_01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="4"
+        android:gravity="center"
+        android:verticalSpacing="10sp"
+        android:horizontalSpacing="10sp"
+        android:listSelector="@drawable/grid_head_bg"
+        android:background="#F3F3F3"
+        android:scrollbars="none">
+    </GridView>
+
+</LinearLayout>

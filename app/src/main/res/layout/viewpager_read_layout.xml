@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:background="@color/layout"
+    android:paddingRight="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/vp_read_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="题目"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/lv_sb_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/vp_read_rbA"
+                    style="@style/lv_sb_rb_display"
+                    android:drawableLeft="@drawable/radio_a"
+                    android:text="选项一" />
+
+                <RadioButton
+                    android:id="@+id/vp_read_rbB"
+                    style="@style/lv_sb_rb_display"
+                    android:drawableLeft="@drawable/radio_b"
+                    android:text="选项二" />
+
+                <RadioButton
+                    android:id="@+id/vp_read_rbC"
+                    style="@style/lv_sb_rb_display"
+                    android:drawableLeft="@drawable/radio_c"
+                    android:text="选项三" />
+
+                <RadioButton
+                    android:id="@+id/vp_read_rbD"
+                    style="@style/lv_sb_rb_display"
+                    android:drawableLeft="@drawable/radio_d"
+                    android:text="选项四" />
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/vp_read_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:button="@null"
+                android:paddingRight="8sp"
+                android:paddingLeft="8sp"
+                android:paddingBottom="6sp"
+                android:paddingTop="6sp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/check_answer"
+                android:text="答案" />
+
+            <LinearLayout
+                android:id="@+id/vp_read_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:id="@+id/vp_read_answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="答案：A  你选择：B"
+                        android:textColor="@color/rbTxtColor"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="答案解释"
+                        android:textColor="#000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/vp_read_explain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="6sp"
+                        android:text="我是解释"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

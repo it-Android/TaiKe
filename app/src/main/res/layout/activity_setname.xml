@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".mine.mini_data.SetName">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="更改昵称"
+        android:theme="@style/AppToobarTitleTheme"
+        app:popupTheme="@style/AppToobarPopupTheme"
+        android:background="#f5f5f5">
+    </androidx.appcompat.widget.Toolbar>
+        <Button
+            android:id="@+id/SetName_Btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:background="#F75000">
+        </Button>
+    </RelativeLayout>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/SetName_Edit"
+        android:hint="输入新的昵称"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+    </EditText>
+
+</LinearLayout>

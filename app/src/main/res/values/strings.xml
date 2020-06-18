@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">我的二级</string>
+    <string name="text_name">我的笔记</string>
+    <string name="type_test">模拟考试</string>
+    <string name="type_practice">普通练习</string>
+    <string name="new_title">标题:</string>
+    <string name="new_settitle">请输入便签标题~</string>
+    <string name="new_content">内容：</string>
+    <string name="new_inputcontent">请输入便签内容~</string>
+    <string name="menu_newnote">新建</string>
+    <string name="menu_exit">退出</string>
+    <string name="menu_alarm">设置提醒时间</string>
+    <string name="menu_share">分享便签</string>
+    <string name="tv_tip">注意：本软件注册只允许输入数字和字母，账号长度可以为2个到8个之间，密码长度只允许为6个!</string>
+</resources>

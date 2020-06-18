@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.taike01.login.login_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:scrollHorizontally="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="true"
+            android:id="@+id/register_ad"
+            android:layout_marginTop="10sp"
+            android:background="#C6E6D491"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:paddingTop="4sp"
+            android:paddingBottom="3sp"
+            android:text="@string/tv_tip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="50dp"
+                android:background="@mipmap/sy0">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户注册"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="50dp"
+                android:singleLine="true"
+                android:background="@drawable/edit_login"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:hint="输入账号"/>
+
+            <EditText
+                android:id="@+id/PassWord1"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:background="@drawable/edit_login"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPassword"
+                android:hint="输入密码" />
+
+            <EditText
+                android:id="@+id/PassWord2"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:background="@drawable/edit_login"
+                android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:inputType="textPassword"
+                android:hint="确认密码" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/Enrol2_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_login"
+                android:text="注册" />
+            <Button
+                android:id="@+id/remove_btn"
+                android:layout_marginLeft="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_login"
+                android:text="返回" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

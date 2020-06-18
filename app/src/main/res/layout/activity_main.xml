@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="NCRE"
+        app:subtitle="我的二级"
+        android:theme="@style/AppToobarTitleTheme"
+        app:popupTheme="@style/AppToobarPopupTheme"
+        android:background="#ffffff">
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:backgroundTint="#f5f5f5"
+        android:background="@android:color/black"/>
+
+    <FrameLayout
+        android:id="@+id/main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@android:color/black"/>
+
+    <RadioGroup
+        android:id="@+id/main_rg_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+        <RadioButton
+            android:id="@+id/main_rb_daily"
+            style="@style/main_rb_dis"
+            android:button="@null"
+            android:drawableTop="@drawable/fragment_radio_daily"
+            android:checked="true"
+            android:text="每日一刷"/>
+        <RadioButton
+            android:id="@+id/main_rb_test"
+            style="@style/main_rb_dis"
+            android:drawableTop="@drawable/fragment_radio_test"
+            android:button="@null"
+            android:text="模拟考试"/>
+        <RadioButton
+            android:id="@+id/main_rb_mine"
+            style="@style/main_rb_dis"
+            android:drawableTop="@drawable/fragment_radio_mine"
+            android:button="@null"
+            android:text="我的界面"/>
+    </RadioGroup>
+
+</LinearLayout>

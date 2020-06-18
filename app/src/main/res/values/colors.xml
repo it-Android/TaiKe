@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorRed">#DD0A0A</color>
+    <color name="colorPrimary">#D9FCEA</color>
+    <color name="colorPrimaryDark">#010F0D</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent1">#E0E0E0</color>
+    <color name="rbTxtColor">#313131</color>
+    <color name="layout">#ffffff</color>
+    <color name="state">#ADADAD</color>
+    <color name="gv_bg01">#C4F8F8F8</color>
+    <color name="gv_bg02">#AD1E4BDB</color>
+</resources>
